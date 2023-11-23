@@ -1,0 +1,8 @@
+mkdir task3
+cd task3
+mkdir logs
+cd logs
+touch access.log
+nano access.log
+cd ..
+grep "denied wrong password" access.log | sort -r | head -n 5
